@@ -106,5 +106,5 @@ venv.bak/
 
 # wav images
 genres_wav/
-genres_spectrograms
+genres_spectrograms/
 test.jpg
