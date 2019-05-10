@@ -1,0 +1,160 @@
+import torch.nn as nn
+    
+class ConvNet(nn.Module):
+    
+    def __init__(self):
+        super(ConvNet, self).__init__()
+        self.conv = nn.Sequential(
+          # input: 1x216x216
+          nn.Conv2d(1, 64, 5),
+          # output: 64x212x212
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2, 2),
+          # output: 64x106x106
+          nn.Conv2d(64, 64, 5),
+          # output: 64x102x102
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2, 2),
+          # output: 64x51x51
+          nn.Conv2d(64, 64, 4),
+          # output: 64x48x48
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2, 2),
+          # output: 64x24x24
+          nn.Conv2d(64, 64, 5),
+          # output: 64x20*20
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2, 2),
+          # output: 64x10*10
+        )
+        self.fc = nn.Sequential(
+          nn.Linear(64*10*10,364),
+          nn.LeakyReLU(0.2),
+          nn.Dropout(0.5),
+          nn.Linear(364,192),
+          nn.LeakyReLU(0.2),
+          nn.Dropout(0.5),
+          nn.Linear(192,10)
+        )
+    
+    def forward(self, input):
+        output = self.conv(input)
+        output = output.view(output.size(0), 64*10*10)
+        output = self.fc(output)
+        return output
+		
+20%
+
+
+
+import torch.nn as nn
+    
+class Conv1DNet(nn.Module):
+    
+    def __init__(self):
+        super(Conv1DNet, self).__init__()
+        self.conv = nn.Sequential(
+          # input: 1x216x216
+          nn.Conv2d(1, 64, (5,1)),
+          # output: 64x212x216
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.ReLU(),
+          nn.MaxPool2d((2,1), (2,1)),
+          nn.Dropout(0.5),
+          # output: 64x106x216
+          nn.Conv2d(64, 64, (5,1)),
+          # output: 64x102x216
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.ReLU(),
+          nn.MaxPool2d((2,1), (2,1)),
+          nn.Dropout(0.5),
+          # output: 64x51x216
+          nn.Conv2d(64, 64, (4,1)),
+          # output: 64x48x216
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.ReLU(),
+          nn.MaxPool2d((2,1), (2,1)),
+          nn.Dropout(0.5),
+          # output: 64x24x216
+          nn.Conv2d(64, 64, (5,1)),
+          # output: 64x20x216
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.ReLU(),
+          nn.MaxPool2d((2,1), (2,1)),
+          nn.Dropout(0.5)
+          # output: 64x10x216
+        )
+        self.fc = nn.Sequential(
+          nn.Linear(64*10*216,364),
+          nn.LeakyReLU(0.2),
+          nn.Dropout(0.5),
+          nn.Linear(364,192),
+          nn.LeakyReLU(0.2),
+          nn.Dropout(0.5),
+          nn.Linear(192,10)
+        )
+    
+    def forward(self, input):
+        output = self.conv(input)
+        output = output.view(output.size(0), 64*10*216)
+        output = self.fc(output)
+        return output
+		
+26%
+
+
+
+import torch.nn as nn
+    
+class Conv1DNet2(nn.Module):
+    
+    def __init__(self):
+        super(Conv1DNet2, self).__init__()
+        self.conv = nn.Sequential(
+          # input: 1x216x216
+          nn.Conv2d(1, 128, (5,1)),
+          # output: 128x212x216
+          nn.BatchNorm2d(128,momentum=0.9),
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2),
+          nn.Dropout(0.5),
+          # output: 128x106x108
+          nn.Conv2d(128, 64, (5,1)),
+          # output: 64x102x108
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2),
+          nn.Dropout(0.5),
+          # output: 64x51x54
+          nn.Conv2d(64, 64, (4,1)),
+          # output: 64x48x54
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d(2),
+          nn.Dropout(0.5),
+          # output: 64x24x27
+          nn.Conv2d(64, 64, (5,1)),
+          # output: 64x20x27
+          nn.BatchNorm2d(64,momentum=0.9),
+          nn.LeakyReLU(0.2),
+          nn.MaxPool2d((2,1), (2,1)),
+          nn.Dropout(0.5)
+          # output: 64x10x27
+        )
+        self.fc = nn.Sequential(
+          nn.Linear(64*10*27,364),
+          nn.LeakyReLU(0.2),
+          nn.Dropout(0.5),
+          nn.Linear(364,192),
+          nn.LeakyReLU(0.2),
+          nn.Dropout(0.5),
+          nn.Linear(192,10)
+        )
+    
+    def forward(self, input):
+        output = self.conv(input)
+        output = output.view(output.size(0), 64*10*27)
+        output = self.fc(output)
+        return output
+		
+32%
