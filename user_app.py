@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import *
-from model import Conv1DNet2
+from model import Model
 from spectrogram import Spectrogram
 
 class Application(tk.Frame):
@@ -11,7 +11,7 @@ class Application(tk.Frame):
         self.pack()
         
         self.spectrogram = Spectrogram()
-        self.model = Conv1DNet2()
+        self.model = Model()
         
         self.musicFilePath = StringVar()
         self.defaultDir = "/home/peclatj/data/Document/Université/Master MCS/Advanced Topics in Machine Learning/ATML19/genres_wav/classical"
@@ -51,7 +51,7 @@ class Application(tk.Frame):
     def classify(self):
         imgs = self.spectrogram.sample(self.musicFilePath.get())
         
-        self.model.load("best_model")
+        self.model.load("best_model_resnet")
         
         for img in imgs:
             print(self.model.predict_image(img))
