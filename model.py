@@ -77,7 +77,7 @@ class Conv1DNet2(nn.Module):
         image_tensor = image_tensor.unsqueeze_(0)
         input = Variable(image_tensor)
         input = input.to(self.device)
-        output = self(input)
+        output = nn.Softmax()(self(input))
         index = output.data.cpu().numpy()
         return index
             
