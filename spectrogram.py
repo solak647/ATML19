@@ -39,7 +39,6 @@ class Spectrogram:
         
         # normalize samples
         samples = samples / np.max(np.abs(samples))
-        print(len(samples))
 
         # split the sample    
         splits = []
@@ -65,5 +64,5 @@ class Spectrogram:
             img = Image.open(buf)
             imgs.append(img.convert('RGB'))
             pylab.clf()
-            pylab.close()
+            #pylab.close() # Crashes the GUI
         return imgs

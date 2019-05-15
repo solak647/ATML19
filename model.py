@@ -27,12 +27,11 @@ class Model():
         self.model_ft.eval()
 
     def predict_image(self, image):
-        # image.save('out.png')
         image_tensor = self.transforms(image).float()
         image_tensor = image_tensor.unsqueeze_(0)
         input = Variable(image_tensor)
         input = input.to(self.device)
-        output = nn.Softmax()(self.model_ft(input))
+        output = nn.Softmax(dim=0)(self.model_ft(input)[0])
         return output.data.cpu().numpy()
 
 # class Conv1DNet2(nn.Module):

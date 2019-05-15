@@ -2,6 +2,8 @@ import tkinter as tk
 from tkinter import filedialog
 from tkinter import *
 from model import Model
+import numpy as np
+import torch.nn as nn
 from spectrogram import Spectrogram
 
 class Application(tk.Frame):
@@ -148,7 +150,7 @@ class Application(tk.Frame):
         self.musicFilePath.set(path)
 
     def classify(self):
-        results_sum = [0.0] * self.numberGenre
+        results_sum = np.array([0.0] * self.numberGenre)
         
         #self.model.load("best_model")
         imgs = self.spectrogram.sample(self.musicFilePath.get())
@@ -157,18 +159,20 @@ class Application(tk.Frame):
         for img in imgs:
             results_sum += self.model.predict_image(img)
 
-        results_sum /= len(imgs)
+        x = results_sum / len(imgs)
+        y = x / sum(x) * 100.0
         
-        self.bluesResult.set(str(results_sum[0]))
-        self.classicalResult.set(str(results_sum[1]))
-        self.countryResult.set(str(results_sum[2]))
-        self.discoResult.set(str(results_sum[3]))
-        self.hiphopResult.set(str(results_sum[4]))
-        self.jazzResult.set(str(results_sum[5]))
-        self.metalResult.set(str(results_sum[6]))
-        self.popResult.set(str(results_sum[7]))
-        self.reggaeResult.set(str(results_sum[8]))
-        self.rockResult.set(str(results_sum[9]))
+        self.bluesResult.set(str(int(y[0])) + "%")
+        self.classicalResult.set(str(int(y[1])) + "%")
+        self.countryResult.set(str(int(y[2])) + "%")
+        self.discoResult.set(str(int(y[3])) + "%")
+        self.hiphopResult.set(str(int(y[4])) + "%")
+        self.jazzResult.set(str(int(y[5])) + "%")
+        self.metalResult.set(str(int(y[6])) + "%")
+        self.popResult.set(str(int(y[7])) + "%")
+        self.reggaeResult.set(str(int(y[8])) + "%")
+        self.rockResult.set(str(int(y[9])) + "%")
+        
 
 root = tk.Tk()
 app = Application(master=root)
