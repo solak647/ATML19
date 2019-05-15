@@ -78,6 +78,6 @@ class Conv1DNet2(nn.Module):
         input = Variable(image_tensor)
         input = input.to(self.device)
         output = self(input)
-        index = output.data.cpu().numpy().argmax()
+        index = output.data.cpu().numpy()
         return index
             

@@ -39,6 +39,7 @@ class Spectrogram:
         
         # normalize samples
         samples = samples / np.max(np.abs(samples))
+        print(len(samples))
 
         # split the sample    
         splits = []
