@@ -159,19 +159,18 @@ class Application(tk.Frame):
         for img in imgs:
             results_sum += self.model.predict_image(img)
 
-        x = results_sum / len(imgs)
-        y = x / sum(x) * 100.0
+        results = results_sum / len(imgs) * 100.0
         
-        self.bluesResult.set(str(int(y[0])) + "%")
-        self.classicalResult.set(str(int(y[1])) + "%")
-        self.countryResult.set(str(int(y[2])) + "%")
-        self.discoResult.set(str(int(y[3])) + "%")
-        self.hiphopResult.set(str(int(y[4])) + "%")
-        self.jazzResult.set(str(int(y[5])) + "%")
-        self.metalResult.set(str(int(y[6])) + "%")
-        self.popResult.set(str(int(y[7])) + "%")
-        self.reggaeResult.set(str(int(y[8])) + "%")
-        self.rockResult.set(str(int(y[9])) + "%")
+        self.bluesResult.set(str(int(results[0])) + "%")
+        self.classicalResult.set(str(int(results[1])) + "%")
+        self.countryResult.set(str(int(results[2])) + "%")
+        self.discoResult.set(str(int(results[3])) + "%")
+        self.hiphopResult.set(str(int(results[4])) + "%")
+        self.jazzResult.set(str(int(results[5])) + "%")
+        self.metalResult.set(str(int(results[6])) + "%")
+        self.popResult.set(str(int(results[7])) + "%")
+        self.reggaeResult.set(str(int(results[8])) + "%")
+        self.rockResult.set(str(int(results[9])) + "%")
         
 
 root = tk.Tk()
