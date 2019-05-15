@@ -60,9 +60,10 @@ class Spectrogram:
             buf = BytesIO()
             pylab.savefig(buf, format='png', bbox_inches=None, pad_inches=0)
             buf.seek(0);
-
+            
             img = Image.open(buf)
             imgs.append(img.convert('RGB'))
             pylab.clf()
+            pylab.close()
             #pylab.close() # Crashes the GUI
         return imgs

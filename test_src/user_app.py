@@ -1,10 +1,10 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import *
-from model import Model
+from models.model import Model
 import numpy as np
 import torch.nn as nn
-from spectrogram import Spectrogram
+from generate_data.spectrogram import Spectrogram
 
 class Application(tk.Frame):
     def __init__(self, master=None):
@@ -154,7 +154,7 @@ class Application(tk.Frame):
         
         #self.model.load("best_model")
         imgs = self.spectrogram.sample(self.musicFilePath.get())
-        self.model.load("best_model_resnet")
+        self.model.load("models/best_model_resnet")
 
         for img in imgs:
             results_sum += self.model.predict_image(img)
