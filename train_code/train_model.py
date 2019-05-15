@@ -7,11 +7,13 @@ from torch.utils.data import DataLoader
 
 import torch.nn as nn
 
+from copy import deepcopy
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 batch_size = 20
-data_dir = '/content/drive/My Drive/ATML/data/'
+data_dir = 'data/'
 root_dir = data_dir + 'train'
 
 target_size = (100,100)
@@ -38,9 +40,6 @@ test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False,
 
 
 # ADDING EARLY STOPPING
-import numpy as np
-import torch
-from copy import deepcopy
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
 def train(model, train_loader, optimizer, loss_fn, print_every=100):
