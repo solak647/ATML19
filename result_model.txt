@@ -244,3 +244,531 @@ Epoch 49/50: train_loss: 0.2268, train_accuracy: 93.1330, val_loss: 1.2764, val_
 Epoch 50/50: train_loss: 0.2165, train_accuracy: 93.4430, val_loss: 1.2749, val_accuracy: 74.0000
 
 Test loss: 1.1350, test accuracy: 74.9763
+
+
+resnet
+
+
+
+Epoch 1/50: train_loss: 1.2102, train_accuracy: 58.6791, val_loss: 1.0222, val_accuracy: 64.7143
+Epoch 2/50: train_loss: 0.8042, train_accuracy: 72.3653, val_loss: 0.8973, val_accuracy: 70.7143
+Epoch 3/50: train_loss: 0.5593, train_accuracy: 81.0443, val_loss: 1.1751, val_accuracy: 69.4286
+
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+
+Epoch 4/50: train_loss: 0.4388, train_accuracy: 85.3600, val_loss: 0.6948, val_accuracy: 76.4286
+Epoch 5/50: train_loss: 0.3264, train_accuracy: 88.9366, val_loss: 0.6247, val_accuracy: 81.7143
+Epoch 6/50: train_loss: 0.2426, train_accuracy: 91.4640, val_loss: 0.6387, val_accuracy: 80.8571
+Epoch 7/50: train_loss: 0.2000, train_accuracy: 93.0854, val_loss: 0.6732, val_accuracy: 81.1429
+Epoch 8/50: train_loss: 0.0582, train_accuracy: 98.4740, val_loss: 0.2040, val_accuracy: 93.7143
+
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+    self._shutdown_workers()
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+    w.join()
+    w.join()
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+AssertionError: can only join a child process
+    self._shutdown_workers()
+AssertionError: can only join a child process
+    w.join()
+    w.join()
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    w.join()
+AssertionError: can only join a child process
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Traceback (most recent call last):
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    w.join()
+AssertionError: can only join a child process
+    self._shutdown_workers()
+    w.join()
+    w.join()
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    w.join()
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+AssertionError: can only join a child process
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    self._shutdown_workers()
+AssertionError: can only join a child process
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+    w.join()
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+Traceback (most recent call last):
+Traceback (most recent call last):
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    self._shutdown_workers()
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+AssertionError: can only join a child process
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+
+Epoch 9/50: train_loss: 0.0281, train_accuracy: 99.3085, val_loss: 0.2169, val_accuracy: 93.2857
+
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+    self._shutdown_workers()
+    self._shutdown_workers()
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+    w.join()
+    w.join()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    self._shutdown_workers()
+    self._shutdown_workers()
+    self._shutdown_workers()
+    self._shutdown_workers()
+    self._shutdown_workers()
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+AssertionError: can only join a child process
+    w.join()
+    w.join()
+    w.join()
+    w.join()
+    w.join()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    self._shutdown_workers()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    self._shutdown_workers()
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    self._shutdown_workers()
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    w.join()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+AssertionError: can only join a child process
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    w.join()
+    w.join()
+    w.join()
+AssertionError: can only join a child process
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+AssertionError: can only join a child process
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+AssertionError: can only join a child process
+AssertionError: can only join a child process
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/lib/python3.6/multiprocessing/queues.py", line 240, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+Traceback (most recent call last):
+Traceback (most recent call last):
+    self._shutdown_workers()
+Traceback (most recent call last):
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/lib/python3.6/multiprocessing/queues.py", line 240, in _feed
+    send_bytes(obj)
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/lib/python3.6/multiprocessing/queues.py", line 240, in _feed
+    send_bytes(obj)
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    w.join()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+    self._shutdown_workers()
+    self._shutdown_workers()
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    self._shutdown_workers()
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+Exception ignored in: <bound method _DataLoaderIter.__del__ of <torch.utils.data.dataloader._DataLoaderIter object at 0x7f83982aa9b0>>
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    w.join()
+    self._shutdown_workers()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+    self._shutdown_workers()
+    self._shutdown_workers()
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/usr/lib/python3.6/multiprocessing/queues.py", line 240, in _feed
+    send_bytes(obj)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/usr/lib/python3.6/multiprocessing/queues.py", line 240, in _feed
+    send_bytes(obj)
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 677, in __del__
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    w.join()
+AssertionError: can only join a child process
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+    self._shutdown_workers()
+    w.join()
+    w.join()
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+    w.join()
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+AssertionError: can only join a child process
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py", line 659, in _shutdown_workers
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 404, in _send_bytes
+    self._send(header + buf)
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+BrokenPipeError: [Errno 32] Broken pipe
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+    w.join()
+    w.join()
+    w.join()
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+  File "/usr/lib/python3.6/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+AssertionError: can only join a child process
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+  File "/usr/lib/python3.6/multiprocessing/process.py", line 122, in join
+AssertionError: can only join a child process
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+AssertionError: can only join a child process
+BrokenPipeError: [Errno 32] Broken pipe
+AssertionError: can only join a child process
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+AssertionError: can only join a child process
+
+Epoch 10/50: train_loss: 0.0206, train_accuracy: 99.5708, val_loss: 0.1815, val_accuracy: 94.5714
+Epoch 11/50: train_loss: 0.0131, train_accuracy: 99.7616, val_loss: 0.1886, val_accuracy: 94.4286
+Epoch 12/50: train_loss: 0.0071, train_accuracy: 99.9285, val_loss: 0.1901, val_accuracy: 94.0000
+Epoch 13/50: train_loss: 0.0086, train_accuracy: 99.9046, val_loss: 0.2135, val_accuracy: 94.7143
+Epoch 14/50: train_loss: 0.0147, train_accuracy: 99.6423, val_loss: 0.2239, val_accuracy: 94.1429
+Epoch 15/50: train_loss: 0.0098, train_accuracy: 99.7854, val_loss: 0.2015, val_accuracy: 94.4286
+Epoch 16/50: train_loss: 0.0074, train_accuracy: 99.8808, val_loss: 0.1851, val_accuracy: 94.8571
+Epoch 17/50: train_loss: 0.0049, train_accuracy: 99.8808, val_loss: 0.1948, val_accuracy: 94.5714
+Epoch 18/50: train_loss: 0.0061, train_accuracy: 99.9285, val_loss: 0.1926, val_accuracy: 95.1429
+Epoch 19/50: train_loss: 0.0064, train_accuracy: 99.8331, val_loss: 0.1844, val_accuracy: 95.0000
+Epoch 20/50: train_loss: 0.0041, train_accuracy: 99.8808, val_loss: 0.1837, val_accuracy: 94.4286
+Epoch 21/50: train_loss: 0.0049, train_accuracy: 99.9046, val_loss: 0.1977, val_accuracy: 94.5714
+Epoch 22/50: train_loss: 0.0035, train_accuracy: 99.9523, val_loss: 0.1780, val_accuracy: 94.7143
+Epoch 23/50: train_loss: 0.0030, train_accuracy: 99.9523, val_loss: 0.1853, val_accuracy: 95.0000
+Epoch 24/50: train_loss: 0.0029, train_accuracy: 99.9285, val_loss: 0.1986, val_accuracy: 94.4286
+Epoch 25/50: train_loss: 0.0026, train_accuracy: 99.9523, val_loss: 0.1936, val_accuracy: 94.7143
+Epoch 26/50: train_loss: 0.0029, train_accuracy: 99.9046, val_loss: 0.1829, val_accuracy: 94.8571
+Epoch 27/50: train_loss: 0.0029, train_accuracy: 99.9285, val_loss: 0.1772, val_accuracy: 94.8571
+Epoch 28/50: train_loss: 0.0036, train_accuracy: 99.9046, val_loss: 0.1811, val_accuracy: 94.7143
+Epoch 29/50: train_loss: 0.0029, train_accuracy: 99.9285, val_loss: 0.1769, val_accuracy: 95.0000
+Epoch 30/50: train_loss: 0.0027, train_accuracy: 99.9285, val_loss: 0.1804, val_accuracy: 94.8571
+Epoch 31/50: train_loss: 0.0022, train_accuracy: 99.9762, val_loss: 0.1744, val_accuracy: 95.1429
+Epoch 32/50: train_loss: 0.0025, train_accuracy: 99.9046, val_loss: 0.1821, val_accuracy: 94.8571
+Epoch 33/50: train_loss: 0.0032, train_accuracy: 99.9046, val_loss: 0.1881, val_accuracy: 94.8571
+Epoch 34/50: train_loss: 0.0026, train_accuracy: 99.9046, val_loss: 0.1744, val_accuracy: 94.8571
+Epoch 35/50: train_loss: 0.0022, train_accuracy: 99.9285, val_loss: 0.1839, val_accuracy: 94.7143
+Epoch 36/50: train_loss: 0.0022, train_accuracy: 99.9285, val_loss: 0.1801, val_accuracy: 95.0000
+Epoch 37/50: train_loss: 0.0022, train_accuracy: 99.9523, val_loss: 0.1822, val_accuracy: 95.0000
+Epoch 38/50: train_loss: 0.0020, train_accuracy: 99.9285, val_loss: 0.1799, val_accuracy: 95.0000
+Epoch 39/50: train_loss: 0.0026, train_accuracy: 99.9523, val_loss: 0.1834, val_accuracy: 94.8571
+Epoch 40/50: train_loss: 0.0020, train_accuracy: 99.9523, val_loss: 0.1789, val_accuracy: 95.5714
+Epoch 41/50: train_loss: 0.0023, train_accuracy: 99.9285, val_loss: 0.1819, val_accuracy: 95.1429
+Epoch 42/50: train_loss: 0.0020, train_accuracy: 99.9523, val_loss: 0.1787, val_accuracy: 94.8571
+Epoch 43/50: train_loss: 0.0017, train_accuracy: 99.9762, val_loss: 0.1766, val_accuracy: 94.8571
+Epoch 44/50: train_loss: 0.0024, train_accuracy: 99.9523, val_loss: 0.1813, val_accuracy: 95.0000
+Epoch 45/50: train_loss: 0.0020, train_accuracy: 99.9523, val_loss: 0.1812, val_accuracy: 94.8571
+Epoch 46/50: train_loss: 0.0024, train_accuracy: 99.9046, val_loss: 0.1732, val_accuracy: 95.1429
+Epoch 47/50: train_loss: 0.0017, train_accuracy: 99.9523, val_loss: 0.1763, val_accuracy: 94.7143
+Epoch 48/50: train_loss: 0.0021, train_accuracy: 99.9046, val_loss: 0.1795, val_accuracy: 95.0000
+Epoch 49/50: train_loss: 0.0019, train_accuracy: 99.9523, val_loss: 0.1770, val_accuracy: 94.8571
+Epoch 50/50: train_loss: 0.0025, train_accuracy: 99.9046, val_loss: 0.1729, val_accuracy: 95.1429
+
+Test loss: 0.1611, test accuracy: 95.3941
