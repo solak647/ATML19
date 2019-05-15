@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import *
-from model import Conv1DNet2
+from model import Model
 from spectrogram import Spectrogram
 
 class Application(tk.Frame):
@@ -11,7 +11,7 @@ class Application(tk.Frame):
         self.pack()
         
         self.spectrogram = Spectrogram()
-        self.model = Conv1DNet2()
+        self.model = Model()
         
         self.numberGenre = 10
         self.musicFilePath = StringVar()
@@ -150,8 +150,10 @@ class Application(tk.Frame):
     def classify(self):
         results_sum = [0.0] * self.numberGenre
         
-        self.model.load("best_model")
+        #self.model.load("best_model")
         imgs = self.spectrogram.sample(self.musicFilePath.get())
+        self.model.load("best_model_resnet")
+
         for img in imgs:
             results_sum += self.model.predict_image(img)
 

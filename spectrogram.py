@@ -63,7 +63,7 @@ class Spectrogram:
             buf.seek(0);
 
             img = Image.open(buf)
-            imgs.append(img)
+            imgs.append(img.convert('RGB'))
             pylab.clf()
             pylab.close()
         return imgs
