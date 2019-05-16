@@ -17,7 +17,7 @@ data_dir = 'data/'
 root_dir = data_dir + 'train'
 
 target_size = (100,100)
-transforms = Compose([
+training_transforms = Compose([
                     Grayscale(num_output_channels=1),
                     ColorJitter(brightness=0.2,contrast=0.2),
                    # Resize(target_size), # Resizes image
@@ -25,17 +25,24 @@ transforms = Compose([
                     Normalize((0.5,), (0.5,)), # scales to [-1.0, 1.0]
                     ])
 
-train_dataset = ImageFolder(root_dir, transform=transforms)
+using_transforms = Compose([
+                    Grayscale(num_output_channels=1),
+                   # Resize(target_size), # Resizes image
+                    ToTensor(),           # Converts to Tensor, scales to [0, 1] float (from [0, 255] int)
+                    Normalize((0.5,), (0.5,)), # scales to [-1.0, 1.0]
+                    ])
+					
+train_dataset = ImageFolder(root_dir, transform = training_transforms)
 train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False, num_workers=32)
 
 # Same for validation dataset
 val_root_dir = data_dir + 'val'
-val_dataset = ImageFolder(val_root_dir, transform=transforms)
+val_dataset = ImageFolder(val_root_dir, transform = using_transforms)
 val_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=4)
 
 # Same for test dataset
 test_root_dir = data_dir + 'test'
-test_dataset = ImageFolder(test_root_dir, transform=transforms)
+test_dataset = ImageFolder(test_root_dir, transform = using_transforms)
 test_dataloader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=4)
 
 
