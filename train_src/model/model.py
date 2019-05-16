@@ -86,7 +86,7 @@ class Model:
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
                 val_accuracy_best = val_accuracy
-                best_model = deepcopy(model)
+                best_model = deepcopy(self.model)
                 counter = 0
             else:
                 counter += 1
