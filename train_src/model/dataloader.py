@@ -10,19 +10,19 @@ class DataLoader:
         self.test_transforms = test_transforms
         self.val_transforms = val_transforms
         self.batch_size = batch_size
-        if train_transforms is None:
-            train_transforms = Compose([
+        if self.train_transforms is None:
+            self.train_transforms = Compose([
                 ColorJitter(brightness=0.2,contrast=0.2),
                 ToTensor(),           # Converts to Tensor, scales to [0, 1] float (from [0, 255] int)
                 Normalize((0.5,), (0.5,)), # scales to [-1.0, 1.0]
             ])
-        if test_transforms is None:
-            test_transforms = Compose([
+        if self.test_transforms is None:
+            self.test_transforms = Compose([
                 ToTensor(),           # Converts to Tensor, scales to [0, 1] float (from [0, 255] int)
                 Normalize((0.5,), (0.5,)), # scales to [-1.0, 1.0]
             ])
-        if val_transforms is None:
-            val_transforms = Compose([
+        if self.val_transforms is None:
+            self.val_transforms = Compose([
                 ToTensor(),           # Converts to Tensor, scales to [0, 1] float (from [0, 255] int)
                 Normalize((0.5,), (0.5,)), # scales to [-1.0, 1.0]
             ])
