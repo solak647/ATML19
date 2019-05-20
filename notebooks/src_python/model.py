@@ -21,6 +21,7 @@ class Model():
         self.model_ft = models.resnet18()
         num_ftrs = self.model_ft.fc.in_features
         self.model_ft.fc = nn.Linear(num_ftrs, 10)
+        self.model_ft.to(self.device)
         self.model_ft.load_state_dict(torch.load(filepath, map_location=self.device))
         for parameter in self.model_ft.parameters():
             parameter.requires_grad = False
@@ -31,7 +32,8 @@ class Model():
         image_tensor = image_tensor.unsqueeze_(0)
         input = Variable(image_tensor)
         input = input.to(self.device)
-        output = nn.Softmax(dim=0)(self.model_ft(input)[0])
+        output = self.model_ft(input)
+        output = nn.Softmax(dim=0)(output[0])
         return output.data.cpu().numpy()
 
 # class Conv1DNet2(nn.Module):
